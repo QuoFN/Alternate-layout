@@ -55,7 +55,14 @@ body {
     border-radius: 12px;
     line-height: 32px;
     color: #ffffff;
+    transition: all .3s ease-in-out;
 }
+
+.button:hover {
+    background: rgb(231, 87, 43);
+    box-shadow: 0px 0px 8px 9px rgba(0, 108, 122, 0.377) inset;
+}
+
 
 
 .title {
