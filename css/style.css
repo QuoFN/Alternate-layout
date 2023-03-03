@@ -337,7 +337,7 @@ body {
     .header__container-desc {
         display: flex;
         position: relative;
-        right: 1em;
+        right: 1.4em;
         top: 2em;
     }
 }
