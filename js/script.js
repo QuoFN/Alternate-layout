@@ -1,14 +1,15 @@
 $(function () {
 
-    $(".rateYo").rateYo({
+    $('.rateYo').rateYo({
         onSet: function (rating, rateYoInstance) {
-            alert("Rating is set to: " + rating);
+            alert('Rating is set to: ' + rating);
         }
     });
 
-    let burger = document.querySelector('.burger');
-    let menu = document.querySelector('.menu__nav');
-    burger.addEventListener('click', function () {
-        menu.classList.toggle('active');
+    var mixer = mixitup('.blog__list');
+
+    $('.blog__button').on('click', function () {
+        $('.blog__button').removeClass('blog__button--active')
+        $(this).addClass('blog__button--active')
     })
 });
