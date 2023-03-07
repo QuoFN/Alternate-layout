@@ -697,13 +697,17 @@ body {
 
 
 .review {
+    display: flex;
+    flex-direction: column;
     padding-top: 128px;
     padding-bottom: 206px;
     background: #F2F2F2;
 }
 
 .review__title {
+    margin: 0 auto;
     text-align: center;
+    max-width: 910px;
     line-height: 131%;
     letter-spacing: -0.03em;
     margin-bottom: 76px;
