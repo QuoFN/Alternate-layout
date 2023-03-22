@@ -869,7 +869,13 @@ body {
 
 .questions {
     margin-bottom: 121px;
+    padding-bottom: 124px;
     background: #E2E6E9;
+}
+
+
+.questions__content {
+    position: relative;
 }
 
 .questions__title {
@@ -877,6 +883,171 @@ body {
     text-align: center;
     line-height: 131%;
 }
+
+.questions__block-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px 0;
+}
+
+
+.questions__block-item {
+    width: 46vw;
+    padding: 40px 154px 38px 40px;
+    background-color: #ffffff;
+}
+
+.questions__block-link--active .questions__block-head::after {
+    transform: rotate(0deg);
+}
+
+.questions__block-head {
+    position: relative;
+}
+
+.questions__block-head::before,
+.questions__block-head::after {
+    content: '';
+    position: absolute;
+    top: 0.85vw;
+    right: -4.4vw;
+    width: 0.83vw;
+    border: 1px solid #ffffff;
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+.questions__block-head::after {
+    content: '';
+    transform: rotate(90deg);
+}
+
+
+.questions__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.questions__orange-block {
+    position: absolute;
+    top: -20%;
+    right: -15%;
+    background-color: #FF6433;
+    width: 2.66vw;
+    height: 2.50vw;
+}
+
+.questions__text {
+    display: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    color: #939191;
+}
+
+
+
+
+/* ------------------------F O R M---------------------------- */
+
+
+
+.form {
+    margin-bottom: 178px;
+}
+
+.form__title {
+    max-width: 500px;
+    line-height: 131%;
+    font-size: 64px;
+    letter-spacing: -0.03em;
+    margin-bottom: 48px;
+}
+
+.form__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.form__top {
+    
+}
+
+.form__shape {
+    margin-bottom: 48px;
+}
+
+.form__shape-input {
+    width: 100%;    
+    margin-bottom: 4px;
+    padding: 23px 40px;
+    border-radius: 2px;
+    background: #F2F2F2;
+}
+
+.form__shape-input {
+    font-weight: 600;
+}
+
+.form__shape-service {
+    display: block;
+    margin-right: -10px;
+    appearance: none;
+}
+
+.form__shape-name {
+}
+.form__shape-email {
+}
+
+::placeholder {
+    color: #1E1B1B;
+    line-height: 175%;
+}
+
+.form__shape-text {
+    resize: none;
+}
+
+.form__top-button {
+    padding: 16px 40px;
+}
+
+.form__top-button:hover {
+    box-shadow: 0px 0px 18px 9px rgba(34, 60, 80, 0.2) inset;
+}
+
+.form__row {}
+
+.form__contacts {}
+
+.form__contacts-content {
+    margin-bottom: 32px;
+}
+
+.form__contacts-title {
+    opacity: 0.7;
+    line-height: 175%;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.form__contacts-paragraph {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+}
+
+.form__contacts-paragraph span {
+    display: block;
+}
+
+
 
 
 
@@ -931,7 +1102,7 @@ body {
     .header__star {
         position: static;
     }
-    
+
     .header__image {
         width: 23rem;
         display: block;
