@@ -39,10 +39,23 @@ $(function () {
 
     $('.review__slider-dot').on('click', function (e) {
         e.preventDefault()
-        
     })
 
 
+    $('.questions__block-link').on('click', function(e){
+        e.preventDefault()
+        
+        if ($(this).hasClass('questions__block-link--active')) {
+            $(this).removeClass('questions__block-link--active')
+            $(this).children('.questions__text').slideUp()
+        }
+        else {
+            $('.questions__block-link').removeClass('questions__block-link--active')
+            $('.questions__text').slideUp()
+            $(this).addClass('questions__block-link--active')
+            $(this).children('.questions__text').slideDown()
+        }
+    })
 });
 
 
