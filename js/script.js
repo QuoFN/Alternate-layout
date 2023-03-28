@@ -42,9 +42,9 @@ $(function () {
     })
 
 
-    $('.questions__block-link').on('click', function(e){
+    $('.questions__block-link').on('click', function (e) {
         e.preventDefault()
-        
+
         if ($(this).hasClass('questions__block-link--active')) {
             $(this).removeClass('questions__block-link--active')
             $(this).children('.questions__text').slideUp()
@@ -56,6 +56,16 @@ $(function () {
             $(this).children('.questions__text').slideDown()
         }
     })
+    function init() {
+        let map = new ymaps.Map("map", {
+            center: [40.714606, -74.002800],
+            zoom: 12
+        })
+        
+    }
+
+    ymaps.ready(init);
+
 });
 
 
