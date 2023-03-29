@@ -1,6 +1,11 @@
+:root {
+    scroll-behavior: smooth;
+}   
+
 body {
     font-family: Manrope, sans-serif;
     color: #1E1B1B;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -163,7 +168,7 @@ body {
 
 
 .header__body {
-    margin: 192px 0 118px 0;
+    margin-top: 192px;
 }
 
 .header__body-inner {
@@ -329,7 +334,7 @@ body {
 /* ---------------------O F F E R-------------------------- */
 
 .offer {
-    margin-top: 216px;
+    margin-top: 118px;
     padding-bottom: 138px;
     background: #F2F2F2;
 }
@@ -894,7 +899,7 @@ body {
 
 
 .questions {
-    margin-bottom: 121px;
+
     padding-bottom: 124px;
     background: #E2E6E9;
 }
@@ -988,7 +993,8 @@ body {
 
 
 .form {
-    margin-bottom: 178px;
+    padding-bottom: 178px;
+    padding-top: 121px;
 }
 
 .form__title {
@@ -1142,6 +1148,15 @@ ymaps>ymaps>iframe {
     fill: #ffffff9c;
 }
 
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+a.disabled path {
+    fill: #888;
+}
+
 .footer__info-item {
     margin-bottom: 32px;
     color: #ffffff;
@@ -1199,6 +1214,13 @@ ymaps>ymaps>iframe {
     color: #939191;
 }
 
+
+
+
+/* 
+.scroll-container {
+    scroll-behavior: smooth;
+} */
 
 /* ------------------------MEDIA-------------------------- */
 
