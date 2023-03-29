@@ -64,60 +64,68 @@ body {
     font-size: 58px;
 }
 
-.main {}
-
 
 /* ---------------------------------- */
 
-.menu {
+
+
+
+/* ---------------- */
+
+
+.header {}
+
+.header__top {}
+
+.header__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
 }
 
-.menu__nav {
+.header__menu-nav {
     display: flex;
     align-items: center;
 }
 
-.nav {
+.header__nav {
     padding-right: 32px;
 }
 
-.nav__list {
+.header__nav-list {
     display: flex;
 }
 
-.nav__item {
+.header__nav-item {
     padding-right: 40px;
     transition: all .2s linear;
 }
 
-.nav__item:hover {
+.header__nav-item:hover {
     color: #fa7101;
 }
 
-.nav__item:last-child {
+.header__nav-item:last-child {
     padding-right: 0;
 }
 
 
-.nav__link {
+.header__nav-link {
     font-weight: 600;
     line-height: 28px;
     transition: all .3s linear;
 }
 
 
-.menu__assistance {
+.header__menu-assistance {
     position: relative;
     display: flex;
     align-items: center;
     margin-left: 4rem;
 }
 
-.menu__assistance::before {
+.header__menu-assistance::before {
     content: '';
     position: absolute;
     right: 125%;
@@ -126,43 +134,45 @@ body {
     opacity: 0.36;
 }
 
-.menu__image {
+.header__menu-image-link {
     margin-right: 14px;
     transition: all .3s linear;
 }
 
-.menu__image:hover {
+.header__menu-image-link:hover {
     transform: scale(1.2) rotate(-10deg);
 }
 
 
-.menu__text {
+.header__menu-text {
     opacity: 0.7;
     font-weight: 500;
     line-height: 1.5rem;
 }
 
-.menu__phone {
+.header__menu-phone {
     font-weight: 600;
     font-size: 18px;
     line-height: 2rem;
 }
 
 
-/* ---------------- */
 
 
-.header {
-    padding-top: 192px;
-    padding-bottom: 135px;
+
+
+
+.header__body {
+    margin: 192px 0 118px 0;
 }
 
-.header__inner {
+.header__body-inner {
     display: flex;
+
 }
 
-.header__top {
-    padding-right: 51px;
+.header__body-content {
+    margin-right: 51px;
 }
 
 .header__title {
@@ -226,6 +236,7 @@ body {
     line-height: 32px;
 }
 
+.header__body-content-2 {}
 
 .header__image-box {
     margin-top: -82px;
@@ -318,6 +329,7 @@ body {
 /* ---------------------O F F E R-------------------------- */
 
 .offer {
+    margin-top: 216px;
     padding-bottom: 138px;
     background: #F2F2F2;
 }
@@ -555,7 +567,7 @@ body {
     top: 0;
     background: url('../images/get2.png');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     z-index: -1;
 }
 
@@ -913,7 +925,7 @@ body {
     background-color: #ffffff;
 }
 
-.questions__block-link--active .questions__block-head::after {
+.questions__block-link--active .questions__plus {
     transform: rotate(0deg);
 }
 
@@ -921,20 +933,33 @@ body {
     position: relative;
 }
 
-.questions__block-head::before,
-.questions__block-head::after {
-    content: '';
+.questions__orange-block {
     position: absolute;
-    top: 0.88vw;
-    right: -4.4vmax;
-    width: 0.83vmax;
+    top: -20%;
+    right: -15%;
+    width: 51.08px;
+    height: 48px;
+    background-color: #FF6433;
+}
+
+.questions__minus {
+    position: absolute;
+    top: 50%;
+    left: 30%;
     border: 1px solid #ffffff;
+    width: 17px;
     z-index: 10;
     transition: all .3s ease;
 }
 
-.questions__block-head::after {
-    content: '';
+.questions__plus {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    border: 1px solid #ffffff;
+    width: 17px;
+    z-index: 10;
+    transition: all .3s ease;
     transform: rotate(90deg);
 }
 
@@ -945,14 +970,6 @@ body {
     line-height: 150%;
 }
 
-.questions__orange-block {
-    position: absolute;
-    top: -20%;
-    right: -15%;
-    width: 2.66vmax;
-    height: 4.8vmin;
-    background-color: #FF6433;
-}
 
 .questions__text {
     display: none;
@@ -1077,7 +1094,7 @@ body {
     filter: grayscale(1);
 }
 
-ymaps > ymaps > iframe {
+ymaps>ymaps>iframe {
     display: none !important;
 }
 
@@ -1162,6 +1179,7 @@ ymaps > ymaps > iframe {
 .footer__nav-list {
     display: flex;
 }
+
 .footer__nav-item {
     line-height: 175%;
     margin-right: 36px;
@@ -1247,13 +1265,6 @@ ymaps > ymaps > iframe {
         display: none;
     }
 
-    .header {
-        padding-left: 50px;
-    }
-
-    .logo {
-        padding-left: 50px;
-    }
 
 }
 
@@ -1263,17 +1274,10 @@ ymaps > ymaps > iframe {
         display: block;
     }
 
-    .menu__nav {
+    .header__menu-nav {
         display: none;
     }
 
-    .header {
-        padding-left: 0;
-    }
-
-    .logo {
-        padding-left: 0;
-    }
 
     .header__container-desc {
         position: relative;
