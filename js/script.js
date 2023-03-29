@@ -42,6 +42,8 @@ $(function () {
     })
 
 
+    
+
     $('.questions__block-link').on('click', function (e) {
         e.preventDefault()
 
@@ -61,11 +63,15 @@ $(function () {
             center: [40.714606, -74.002800],
             zoom: 12
         })
-        
     }
-
     ymaps.ready(init);
 
+    $("nav__list a, .header__button, .process__button, .get-in-touch__button, .footer__bottom-logo-link, .footer__nav-link").on("click", function (event) {
+        e.preventDefault()
+        var id = $(this).attr('href'),
+        top = $(id).offset().top
+        $('body,html').animate({ scrollTop: top }, 800)
+    });
 });
 
 
