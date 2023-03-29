@@ -1,10 +1,14 @@
 $(function () {
 
+//           З В Е З Д Ы           \\
+
     $('.rateYo').rateYo({
         onSet: function (rating, rateYoInstance) {
             alert('Rating is set to: ' + rating);
         }
     });
+
+//           В Ы Б О Р  К А Т Е Г О Р И И            \\
 
     var mixer = mixitup('.blog__list');
 
@@ -12,6 +16,8 @@ $(function () {
         $('.blog__button').removeClass('blog__button--active')
         $(this).addClass('blog__button--active')
     })
+
+    //           С Л А Й Д Е Р           \\
 
     $('.review__slider').slick({
         arrows: false,
@@ -42,7 +48,7 @@ $(function () {
     })
 
 
-    
+//           А К К О Р Д Е О Н            \\
 
     $('.questions__block-link').on('click', function (e) {
         e.preventDefault()
@@ -58,6 +64,9 @@ $(function () {
             $(this).children('.questions__text').slideDown()
         }
     })
+
+//           К А Р Т А           \\
+
     function init() {
         let map = new ymaps.Map("map", {
             center: [40.714606, -74.002800],
@@ -66,12 +75,14 @@ $(function () {
     }
     ymaps.ready(init);
 
-    $("nav__list a, .header__button, .process__button, .get-in-touch__button, .footer__bottom-logo-link, .footer__nav-link").on("click", function (event) {
-        e.preventDefault()
-        var id = $(this).attr('href'),
-        top = $(id).offset().top
-        $('body,html').animate({ scrollTop: top }, 800)
-    });
+//           С К Р О Л            \\
+
+    // $(".header__nav-list a, .header__button, .process__button, .get-in-touch__button, .footer__logo-link, .footer__nav-link, .logo").on("click", function (event) {
+    //     event   .preventDefault()
+    //     var id = $(this).attr('href'),
+    //     top = $(id).offset().top
+    //     $('body,html').animate({ scrollTop: top }, 800)
+    // });
 });
 
 
