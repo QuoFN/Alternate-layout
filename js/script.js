@@ -1,5 +1,6 @@
 $(function () {
 
+
 //           З В Е З Д Ы           \\
 
     $('.rateYo').rateYo({
@@ -83,6 +84,28 @@ $(function () {
     //     top = $(id).offset().top
     //     $('body,html').animate({ scrollTop: top }, 800)
     // });
+
+setInterval(() => {
+    if ($(window).scrollTop() > 0  && $('.header__top').hasClass('header__top--open') === false)  {
+        $('.burger').addClass('burger--follow')
+    }
+    else {
+        $('.burger').removeClass('burger--follow')
+    }
+}, 0)
+
+    $('.burger, .overlay').on('click', function (e) {
+        e.preventDefault()
+        $('.header__top').toggleClass('header__top--open')
+        $('.overlay').toggleClass('overlay--show')
+
+
+        if ($('.header__top').hasClass('header__top--open')) {
+            $('.burger').addClass('burger--open')
+        }
+        else {
+            $('.burger').removeClass('burger--open')
+        }
 });
 
-
+})
