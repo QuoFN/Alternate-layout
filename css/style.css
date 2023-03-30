@@ -1299,6 +1299,11 @@ a.disabled path {
         flex-direction: column;
     }
 
+    .header__menu-block-text {
+        align-items: center;
+        justify-content: center;
+    }
+
     .header__menu-image-link {
         margin: 0;
         padding-bottom: 10px;
