@@ -1484,6 +1484,14 @@ a.disabled path {
     .button {
         padding: 12px 38px;
     }
+
+    .header__slogan {
+        font-size: 15px;
+    }
+
+    .header__info {
+        font-size: 13px;
+    }
 }
 
 /* ======================== 400 ================================ */
@@ -1518,12 +1526,7 @@ a.disabled path {
         margin-left: 30px;
     }
 
-    .header__info {
-        font-size: 14px;
-    }
-
     .header__slogan {
-        font-size: 16px;
         line-height: 23px;
     }
 
