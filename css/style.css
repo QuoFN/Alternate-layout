@@ -47,6 +47,7 @@ body {
     background: #FF6433;
     border-radius: 12px;
     line-height: 32px;
+    padding: 16px 40px;
     color: #ffffff;
     transition: all .5s ease;
 }
@@ -123,7 +124,7 @@ body {
 
 .header__menu-image-link {
     margin-right: 14px;
-    transition: all .3s linear;
+    transition: all .3s;
 }
 
 .header__menu-image-link:hover {
@@ -133,12 +134,12 @@ body {
 
 .header__menu-text {
     opacity: 0.7;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5rem;
 }
 
 .header__menu-phone {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 18px;
     line-height: 2rem;
 }
@@ -155,7 +156,8 @@ body {
 
 .header__body-inner {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__body-content {
@@ -163,9 +165,9 @@ body {
 }
 
 .header__title {
-    width: 650px;
+    max-width: 650px;
     font-size: 64px;
-    line-height: 84px;
+    line-height: 131%;
     padding-bottom: 32px;
 }
 
@@ -176,7 +178,6 @@ body {
 }
 
 .header__button {
-    padding: 16px 40px;
     margin-right: 50px;
 }
 
@@ -213,14 +214,14 @@ body {
 }
 
 .header__info {
-    line-height: 24px;
+    line-height: 150%;
     color: #939191;
 }
 
 .header__slogan {
     font-weight: 600;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 175%;
 }
 
 .header__body-content-2 {}
@@ -234,8 +235,8 @@ body {
 
 .header__star {
     position: absolute;
-    top: 460px;
-    right: -50px;
+    top: 465px;
+    right: -20px;
     width: 326px;
     max-height: 102px;
     border-radius: 59px;
@@ -250,7 +251,6 @@ body {
 
 .header__wrapper-star {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
 }
@@ -262,21 +262,23 @@ body {
 }
 
 .rating-number {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.03em;
+    line-height: 150%;
+    letter-spacing: -0.06em;
 }
 
 .rating-star {
-    line-height: 24px;
+    line-height: 150%;
+    font-weight: 700;
+    opacity: 0.7;
 }
 
 .header__service {
     position: absolute;
-    top: 75px;
-    right: 340px;
-    width: 326px;
+    top: 85px;
+    right: 360px;
+    max-width: 326px;
     max-height: 102px;
     border-radius: 59px;
     background-color: #ffffff;
@@ -290,13 +292,15 @@ body {
 
 .header__wrapper-service {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 16px 45px;
+    padding: 14px;
+    max-height: 102px;
+    width: 280px;
 }
 
 .header__service-image {
-    transition: all .3s linear;
+    transition: all .3s;
+    margin-right: 15px;
 }
 
 .header__service-image:hover {
@@ -304,9 +308,9 @@ body {
 }
 
 .header__service-text {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 150%;
 }
 
 
@@ -441,7 +445,6 @@ body {
 
 .process__button {
     max-width: max-content;
-    padding: 16px 40px;
 }
 
 .process__button:hover {
@@ -545,7 +548,6 @@ body {
 .get-in-touch__button {
     max-width: max-content;
     border-radius: 12px;
-    padding: 16px 40px;
     color: #ffffff;
     background-color: #1E1B1B;
     transition: all .3s linear;
@@ -997,7 +999,6 @@ body {
 
 .form__top-button {
     margin-top: 48px;
-    padding: 16px 40px;
     font-weight: 500;
 }
 
@@ -1176,6 +1177,141 @@ a.disabled path {
 
 /* ------------------------MEDIA-------------------------- */
 
+
+
+/* ======================== 1200 ================================ */
+
+@media (max-width: 1200px) {
+
+    .header__title {
+        max-width: 450px;
+        font-size: 52px;
+    }
+
+    .header__image {
+        max-width: 500px;
+    }
+
+    /* --------------------------------------- */
+
+    .header__star {
+        top: 390px;
+        max-height: 80px;
+        width: 240px;
+    }
+
+    .header__wrapper-star {
+        padding: 20px 20px;
+    }
+
+    .header__star-text {
+        padding-right: 5px;
+    }
+
+    .rating-number {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .rating-star {
+        font-size: 13px;
+    }
+
+    .rating__image {
+        max-width: 150px;
+    }
+
+    /* --------------------------------------- */
+
+    .header__service {
+        top: 30px;
+        left: -30px;
+        width: 240px;
+    }
+
+    .header__wrapper-service {
+        padding: 14px;
+    }
+
+    .header__service-image {
+        max-width: 60px;
+    }
+
+    .header__service-text {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+
+/* ======================== 1000 ================================ */
+
+@media (max-width: 1000px) {
+
+    .header__title {
+        max-width: 350px;
+        font-size: 43px;
+    }
+
+    .header__image {
+        max-width: 400px;
+    }
+
+    .button {
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+
+
+    /* --------------------------------------------- */
+
+    .header__star {
+        top: 315px;
+        right: -10px;
+        max-height: 74px;
+        width: 210px;
+    }
+
+    .header__wrapper-star {
+        padding: 20px 20px;
+    }
+
+    .header__star-text {
+        padding-right: 5px;
+    }
+
+    .rating-number {
+        font-size: 18px;
+    }
+
+    .rating-star {
+        font-size: 12px;
+    }
+
+    .rating__image {
+        max-width: 120px;
+    }
+
+    /* -------------------------------------------- */
+    .header__service {
+        left: -13px;
+        width: 220px;
+        max-height: 80px;
+    }
+
+    .header__wrapper-service {
+        padding: 10px;
+    }
+
+    .header__service-image {
+        max-width: 56px;
+        margin-right: 5px;
+    }
+
+    .header__service-text {
+        font-size: 18px;
+    }
+}
+
 /* ======================== 900 ================================ */
 
 @media (max-width: 900px) {
@@ -1206,7 +1342,7 @@ a.disabled path {
         border-radius: 5px;
         background-color: #1E1B1B;
         margin: 4px 0;
-        
+
     }
 
     .burger::after,
@@ -1233,11 +1369,6 @@ a.disabled path {
     .burger--open:after {
         position: fixed;
         transform: rotate(45deg);
-    }
-    
-
-    .header {
-        padding-top: 80px;
     }
 
     .header__top {
@@ -1299,20 +1430,66 @@ a.disabled path {
         flex-direction: column;
     }
 
-    .header__menu-block-text {
-        align-items: center;
-        justify-content: center;
-    }
-
     .header__menu-image-link {
         margin: 0;
         padding-bottom: 10px;
     }
 }
 
+/* ======================== 850 ================================ */
+@media (max-width: 850px) {
+
+    .header__image {
+        display: none;
+    }
+
+    .header__star {
+        margin-bottom: 30px;
+        top: 150px;
+        left: -220px;
+    }
+
+    /* -------------------------------------------- */
+    .header__service {
+        top: -50px;
+        left: -220px;
+    }
+}
+
+
+/* ======================== 700 ================================ */
+
+@media (max-width: 700px) {
+    .header__star {
+        position: static;
+    }
+
+    .header__service {
+        position: static;
+    }
+
+    .header__body {
+        margin-top: 120px;
+    }
+
+    .header__body-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__image-box {
+        margin-top: 30px;
+    }
+
+    .button {
+        padding: 12px 38px;
+    }
+}
+
 /* ======================== 400 ================================ */
 
 @media (max-width: 400px) {
+
     .header__top {
         min-width: none;
         left: 0;
@@ -1320,5 +1497,41 @@ a.disabled path {
 
     .header__nav-link {
         padding: 15px;
+    }
+
+    .header__title {
+        width: 100%;
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .header__btn-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__button {
+        margin-bottom: 20px;
+    }
+
+    .header__play-button {
+        margin-left: 30px;
+    }
+
+    .header__info {
+        font-size: 14px;
+    }
+
+    .header__slogan {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .header__image-box {
+        margin-top: 10px;
+    }
+
+    .header__star {
+        margin-bottom: 10px;
     }
 }
