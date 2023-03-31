@@ -1,14 +1,6 @@
 $(function () {
 
 
-//           З В Е З Д Ы           \\
-
-    $('.rateYo').rateYo({
-        onSet: function (rating, rateYoInstance) {
-            alert('Rating is set to: ' + rating);
-        }
-    });
-
 //           В Ы Б О Р  К А Т Е Г О Р И И            \\
 
     var mixer = mixitup('.blog__list');
