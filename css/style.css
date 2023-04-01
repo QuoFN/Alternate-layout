@@ -338,7 +338,7 @@ body {
     align-self: center;
     max-width: 900px;
     padding-bottom: 4rem;
-    line-height: 76px;
+    line-height: 131%;
 }
 
 .offer__title {
@@ -351,8 +351,8 @@ body {
 
 .offer__cards {
     display: grid;
-    grid-template-columns: repeat(4, 320px);
-    grid-template-rows: repeat(2, 230px);
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    width: 100%;
     gap: 8px;
     padding-bottom: 32px;
 }
@@ -362,6 +362,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 232px;
     background: #ffffff;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -413,7 +414,7 @@ body {
     }
 
     100% {
-        transform: translateX(20px);
+        transform: translateX(10px);
     }
 }
 
@@ -463,6 +464,10 @@ body {
     position: relative;
     bottom: 1em;
     padding-right: 24px;
+}
+
+.process__image-border {
+    position: relative;
 }
 
 .process__image-border::after {
@@ -611,13 +616,9 @@ body {
     margin-bottom: 31px;
 }
 
-.brands__list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 39px;
-}
-
-.brands__item {
+.brands__block {
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -1183,12 +1184,6 @@ a.disabled path {
 
 
 
-/* ======================== 1350 ================================ */
-
-@media (max-width: 1350px) {
-    
-}
-
 /* ======================== 1200 ================================ */
 
 @media (max-width: 1200px) {
@@ -1251,6 +1246,65 @@ a.disabled path {
         font-size: 20px;
         margin-right: 10px;
     }
+
+    /* ============================================= */
+
+    .process__top {
+        margin-right: 50px;
+    }
+
+    /* --------------------------------- */
+
+    .process__img {
+        width: 65px;
+    }
+
+    .process__subject {
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    .process__text {
+        max-width: inherit;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .process__image-border::before,
+    .process__image-border::after {
+        display: none;
+    }
+
+    .process__text-block {
+        cursor: none;
+    }
+
+    .process__text-block:hover {
+        transform: none;
+        padding-left: 0;
+    }
+
+    .process__image-circle {
+        left: 12px;
+        top: 48px;
+    }
+
+    /* =================================== */
+
+    .experience__number {
+        font-size: 53px;
+    }
+
+    .experience__subtitle {
+        font-size: 20px;
+    }
+
+    /* ==================================== */
+
+    .brands__title {
+        font-size: 54px;
+    }
+
 }
 
 /* ======================== 1000 ================================ */
@@ -1319,6 +1373,72 @@ a.disabled path {
 
     .header__service-text {
         font-size: 18px;
+    }
+
+    /* ===================================================== */
+
+    .offer__subtitle {
+        max-width: 500px;
+        font-size: 36px;
+    }
+
+    .process__title {
+        max-width: 500px;
+        line-height: 59px;
+        font-size: 50px;
+    }
+
+    /* ------------------------- */
+
+    .process__image {
+        padding-right: 15px;
+    }
+
+    .process__img {
+        width: 55px;
+    }
+
+    .process__image-circle {
+        left: 7px;
+        top: 40px;
+    }
+
+    /* ================================= */
+
+    .get-in-touch__title {
+        font-size: 38px;
+        line-height: 50px;
+        padding: 60px 30px 30px;
+    }
+
+    .get-in-touch__wrapper {
+        width: 529px;
+        height: 302px;
+    }
+
+    .get-in-touch__button {
+        max-width: max-content;
+        transform: translateX(30px);
+    }
+
+    /* ===================================== */
+
+    .experience__number {
+        font-size: 45px;
+    }
+
+    .experience__subtitle {
+        font-size: 18px;
+    }
+
+    /* =================================== */
+
+    .brands__title {
+        font-size: 50px;
+    }
+
+    .brands__block {
+        margin: -20px;
     }
 }
 
@@ -1444,6 +1564,36 @@ a.disabled path {
         margin: 0;
         padding-bottom: 10px;
     }
+
+    /* ===================================== */
+
+    .offer__title {
+        font-size: 22px;
+    }
+
+    .offer__card-text {
+        font-size: 19px;
+    }
+
+    /* ==================================== */
+
+    .experience__number {
+        font-size: 40px;
+    }
+
+    .experience__subtitle {
+        font-size: 17px;
+    }
+
+    /* ============================= */
+
+    .brands__title {
+        font-size: 46px;
+    }
+
+    .brands__block {
+        margin: -30px;
+    }
 }
 
 /* ======================== 850 ================================ */
@@ -1460,7 +1610,7 @@ a.disabled path {
     }
 
     .header__title {
-        font-size: 49px;
+        font-size: 50px;
         max-width: inherit;
         text-align: center;
     }
@@ -1503,7 +1653,47 @@ a.disabled path {
         position: static;
     }
 
+    /* ================================ */
 
+    .offer__cards {
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+    /* =================================== */
+
+    .process__title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .process__subtitle {
+        font-size: 15px;
+    }
+
+    .process__button {
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+
+    /* ==================================== */
+
+    .experience__number {
+        font-size: 40px;
+    }
+
+    .experience__subtitle {
+        font-size: 15px;
+    }
+
+    /* ======================================== */
+
+    .brands__title {
+        font-size: 40px;
+    }
+
+    .brands__block {
+        margin-bottom: -50px;
+    }
 
 }
 
@@ -1521,6 +1711,166 @@ a.disabled path {
         padding: 12px 38px;
     }
 
+    /* ============================================ */
+
+    .offer__card svg {
+        margin-bottom: 7px;
+    }
+
+    .offer__card-text {
+        font-size: 16px;
+    }
+
+    /* =========================================== */
+
+    .process__top {
+        margin-right: 0;
+    }
+
+    .process__title {
+        text-align: center;
+        max-width: inherit;
+    }
+
+    .process__subtitle {
+        text-align: center;
+        max-width: inherit;
+        line-height: 24px;
+        opacity: 0.6;
+        padding-bottom: 32px;
+    }
+
+    .process__button {
+        max-width: inherit;
+        justify-content: center;
+    }
+
+    .process__row {
+        margin-top: 60px;
+    }
+
+    .process__row-block {
+        justify-content: center;
+    }
+
+    .process__inner {
+        flex-direction: column;
+    }
+
+    .process__image {
+        bottom: 0;
+    }
+
+    .process__text {
+        max-width: 300px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /* ====================================== */
+
+    .experience__number {
+        font-size: 38px;
+    }
+
+    .experience__subtitle {
+        font-size: 14px;
+    }
+
+    /* ======================================= */
+
+    .brands__title {
+        font-size: 40px;
+    }
+
+    .brands__block {
+        margin-bottom: -80px;
+    }
+
+}
+
+/* ======================== 550 ================================ */
+
+@media (max-width: 550px) {
+
+    .get-in-touch__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 300px
+    }
+
+    .get-in-touch__title {
+        text-align: center;
+        max-width: 400px;
+        font-size: 28px;
+        line-height: 40px;
+        padding: 70px 20px 30px
+    }
+
+    .get-in-touch__button {
+        font-size: 14px;
+        padding: 10px 40px;
+        transform: translateX(-5px);
+    }
+
+    .get-in-touch {
+        background: none;
+    }
+
+}
+
+/* ======================== 500 ================================ */
+
+@media (max-width: 500px) {
+
+    .offer__switch-text {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .offer__switch-image {
+        width: 46px;
+    }
+
+    /* ================================ */
+
+    .process__subject {
+        font-size: 21px;
+    }
+
+    /* ===================================== */
+
+    .experience__list {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        text-align: center;
+    }
+
+    /* ====================================== */
+
+    .brands {
+        padding: 128px 0 150px;
+    }
+    
+    .brands__block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .brands__block:first-child {
+        margin-top: 30px;
+    }
+
+    .brands__block:last-child {
+        margin-top: 80px;
+    }
+
+    .brands__image {
+        margin: -29px 0;
+    }
 }
 
 /* ======================== 400 ================================ */
@@ -1582,5 +1932,17 @@ a.disabled path {
 
     .header__star {
         margin-bottom: 20px;
+    }
+
+    /* =================================== */
+
+    .offer__title {
+        font-size: 20px;
+    }
+
+    .offer__subtitle {
+        font-size: 32px;
+        line-height: 36px;
+        padding-bottom: 2rem;
     }
 }
