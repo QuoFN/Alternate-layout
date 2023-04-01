@@ -68,6 +68,11 @@ body {
 
 .header {}
 
+.header__body-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .header__top {}
 
 .header__top-inner {
@@ -151,7 +156,7 @@ body {
 
 
 .header__body {
-    margin-top: 192px;
+    margin-top: 110px;
 }
 
 .header__body-inner {
@@ -228,7 +233,6 @@ body {
 
 .header__image-box {
     position: relative;
-    margin-top: -82px;
 }
 
 .header__image {}
@@ -1179,6 +1183,12 @@ a.disabled path {
 
 
 
+/* ======================== 1350 ================================ */
+
+@media (max-width: 1350px) {
+    
+}
+
 /* ======================== 1200 ================================ */
 
 @media (max-width: 1200px) {
@@ -1439,50 +1449,28 @@ a.disabled path {
 /* ======================== 850 ================================ */
 @media (max-width: 850px) {
 
-    .header__image {
-        display: none;
-    }
-
-    .header__star {
-        margin-bottom: 30px;
-        top: 150px;
-        left: -220px;
-    }
-
-    /* -------------------------------------------- */
-    .header__service {
-        top: -50px;
-        left: -220px;
-    }
-}
-
-
-/* ======================== 700 ================================ */
-
-@media (max-width: 700px) {
-    .header__star {
-        position: static;
-    }
-
-    .header__service {
-        position: static;
-    }
-
-    .header__body {
-        margin-top: 120px;
-    }
 
     .header__body-inner {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .header__image-box {
-        margin-top: 30px;
+    .header__body-content {
+        margin: 0;
     }
 
-    .button {
-        padding: 12px 38px;
+    .header__title {
+        font-size: 49px;
+        max-width: inherit;
+        text-align: center;
+    }
+
+    .header__btn-box {
+        justify-content: center;
+    }
+
+    .header__desc {
+        justify-content: center;
     }
 
     .header__slogan {
@@ -1492,6 +1480,47 @@ a.disabled path {
     .header__info {
         font-size: 13px;
     }
+
+    .header__body-content-2 {
+        margin-top: 30px;
+    }
+
+    .header__container-desc {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .header__image {
+        display: none;
+    }
+
+    .header__star {
+        position: static;
+    }
+
+    .header__service {
+        position: static;
+    }
+
+
+
+}
+
+
+/* ======================== 700 ================================ */
+
+@media (max-width: 700px) {
+
+
+    .header__body {
+        margin-top: 90px;
+    }
+
+    .button {
+        padding: 12px 38px;
+    }
+
 }
 
 /* ======================== 400 ================================ */
@@ -1507,6 +1536,8 @@ a.disabled path {
         padding: 15px;
     }
 
+    /* ------------------------- */
+
     .header__title {
         width: 100%;
         font-size: 35px;
@@ -1515,26 +1546,41 @@ a.disabled path {
 
     .header__btn-box {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .header__button {
+        margin: 0;
+        padding: 10px 30px;
         margin-bottom: 20px;
     }
 
     .header__play-button {
-        margin-left: 30px;
+        font-size: 14px;
+    }
+
+    .header__play-button-image {
+        width: 22px;
     }
 
     .header__slogan {
         line-height: 23px;
     }
 
-    .header__image-box {
-        margin-top: 10px;
+    .header__desc {
+        max-width: inherit;
+        justify-content: flex-start;
+    }
+
+    .header__desc-image {
+        width: 41px;
+    }
+
+    .header__container-desc {
+        display: flex;
+        flex-direction: column;
     }
 
     .header__star {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }
