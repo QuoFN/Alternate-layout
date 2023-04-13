@@ -571,6 +571,8 @@ body {
 
 
 
+
+
 /* --------------------------E X P E R I E N C E---------------------------------- */
 
 
@@ -670,7 +672,7 @@ body {
 .blog__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 64px 0;
+    gap: 64px 28px;
 }
 
 .blog__item {
@@ -686,6 +688,8 @@ body {
 }
 
 .blog__image {
+    width: 100%;
+    height: 100%;
     margin-bottom: 24px;
 }
 
@@ -1305,6 +1309,28 @@ a.disabled path {
         font-size: 54px;
     }
 
+    /* ================================= */
+
+    .blog__title {
+        font-size: 52px;
+    }
+
+    .blog__button {
+        font-size: 30px;
+    }
+
+    .blog__info {
+        font-size: 15px;
+    }
+
+    .blog__subtitle {
+        font-size: 28px;
+    }
+
+    .blog__text {
+        font-size: 15px;
+    }
+
 }
 
 /* ======================== 1000 ================================ */
@@ -1439,6 +1465,28 @@ a.disabled path {
 
     .brands__block {
         margin: -20px;
+    }
+
+    /* ================================ */
+
+    .blog__title {
+        font-size: 50px;
+    }
+
+    .blog__button {
+        font-size: 27px;
+    }
+
+    .blog__info {
+        font-size: 14px;
+    }
+
+    .blog__subtitle {
+        font-size: 25px;
+    }
+
+    .blog__text {
+        font-size: 14px;
     }
 }
 
@@ -1591,9 +1639,28 @@ a.disabled path {
         font-size: 46px;
     }
 
-    .brands__block {
-        margin: -30px;
+    /* ============================= */
+
+    .blog__title {
+        font-size: 46px;
     }
+
+    .blog__button {
+        font-size: 24px;
+    }
+
+    .blog__info {
+        font-size: 13px;
+    }
+
+    .blog__subtitle {
+        font-size: 22px;
+    }
+
+    .blog__text {
+        font-size: 13px;
+    }
+
 }
 
 /* ======================== 850 ================================ */
@@ -1632,12 +1699,12 @@ a.disabled path {
     }
 
     .header__body-content-2 {
+        width: 100%;
         margin-top: 30px;
     }
 
     .header__container-desc {
         display: flex;
-        width: 100vw;
         justify-content: center;
     }
 
@@ -1693,6 +1760,28 @@ a.disabled path {
 
     .brands__block {
         margin-bottom: -50px;
+    }
+
+    /* ======================================= */
+
+    .blog__title {
+        font-size: 40px;
+    }
+
+    .blog__button {
+        font-size: 22px;
+    }
+
+    .blog__info {
+        font-size: 13px;
+    }
+
+    .blog__subtitle {
+        font-size: 20px;
+    }
+
+    .blog__text {
+        font-size: 13px;
     }
 
 }
@@ -1787,6 +1876,32 @@ a.disabled path {
         margin-bottom: -80px;
     }
 
+    /* ==================================== */
+
+    .blog__title {
+        font-size: 40px;
+    }
+
+    .blog__button {
+        font-size: 20px;
+    }
+
+    .blog__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog__info {
+        font-size: 12px;
+    }
+
+    .blog__subtitle {
+        font-size: 18px;
+    }
+
+    .blog__text {
+        font-size: 12px;
+    }
+
 }
 
 /* ======================== 550 ================================ */
@@ -1798,7 +1913,7 @@ a.disabled path {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 300px
+        height: 300px;
     }
 
     .get-in-touch__title {
@@ -1853,7 +1968,7 @@ a.disabled path {
     .brands {
         padding: 128px 0 150px;
     }
-    
+
     .brands__block {
         flex-direction: column;
         align-items: center;
@@ -1870,6 +1985,24 @@ a.disabled path {
 
     .brands__image {
         margin: -29px 0;
+    }
+
+    /* ====================================== */
+
+    .blog__list {
+        gap: 40px 13px;
+    }
+
+    .blog__info {
+        font-size: 11px;
+    }
+
+    .blog__subtitle {
+        font-size: 16px;
+    }
+
+    .blog__text {
+        font-size: 11px;
     }
 }
 
@@ -1944,5 +2077,23 @@ a.disabled path {
         font-size: 32px;
         line-height: 36px;
         padding-bottom: 2rem;
+    }
+
+    /* ================================= */
+
+    .blog__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog__info {
+        font-size: 13px;
+    }
+
+    .blog__subtitle {
+        font-size: 18px;
+    }
+
+    .blog__text {
+        font-size: 13px;
     }
 }
