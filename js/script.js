@@ -24,6 +24,15 @@ $(function () {
         // waitForAnimate: false,
         appendArrows: $('.review__slider-arrows'),
         appendDots: $('.review__slider-dots'),
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                    draggable: true,
+                }
+            }
+        ]
     })
 
     $('.review__slider-prev').on('click', function (e) {
@@ -36,7 +45,7 @@ $(function () {
         $('.review__slider').slick('slickNext')
     })
 
-    $('.review__slider-dot').on('click', function (e) {
+    $('.review__slider-dots').on('click', function (e) {
         e.preventDefault()
     })
 
