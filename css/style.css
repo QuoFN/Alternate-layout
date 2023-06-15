@@ -1510,6 +1510,10 @@ a.disabled path {
         font-size: 48px;
     }
 
+    .review__slide {
+        padding: 0;
+    }
+
     /* ============================ */
 
     .questions__title {
@@ -2301,13 +2305,28 @@ a.disabled path {
     }
 
     .blog__text {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     /* ============================== */
 
-    
+    .review__title {
+        font-size: 35px;
+    }
+
+    /* ========================= */
+
+    .questions__block-item {
+        padding: 30px;
+    }
+
+    .questions__orange-block {
+        top: 38px;
+    }
 }
+
+
+/* ====================== 350 ========================== */
 
 @media (max-width: 350px) {
 
@@ -2326,7 +2345,7 @@ a.disabled path {
     /* ====================== */
 
     .questions__subtitle {
-        max-width: 150px;
         font-size: 16px;
+        max-width: 150px;
     }
 }
