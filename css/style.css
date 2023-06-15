@@ -2308,3 +2308,25 @@ a.disabled path {
 
     
 }
+
+@media (max-width: 350px) {
+
+    .review__slide-inner {
+        padding: 30px;
+    }
+
+    .review__name {
+        font-size: 16px;
+    }
+
+    .review__desc {
+        font-size: 15px;
+    }
+    
+    /* ====================== */
+
+    .questions__subtitle {
+        max-width: 150px;
+        font-size: 16px;
+    }
+}
