@@ -2316,6 +2316,10 @@ a.disabled path {
     .form__row {
         display: block;
     }
+
+    .form__title {
+        font-size: 40px;
+    }
 }
 
 /* ======================== 400 ================================ */
