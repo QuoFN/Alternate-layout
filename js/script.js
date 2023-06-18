@@ -86,14 +86,16 @@ $(function () {
     //     $('body,html').animate({ scrollTop: top }, 800)
     // });
 
-setInterval(() => {
-    if ($(window).scrollTop() > 0  && $('.header__top').hasClass('header__top--open') === false)  {
-        $('.burger').addClass('burger--follow')
-    }
-    else {
-        $('.burger').removeClass('burger--follow')
-    }
-}, 0)
+    $(window).on('scroll', function (){
+        if ($(window).scrollTop() > 0  && $('.header__top').hasClass('header__top--open') === false)  {
+            $('.burger').addClass('burger--follow')
+        }
+        else {
+            $('.burger').removeClass('burger--follow')
+        }
+    })
+    
+
 
     $('.burger, .overlay').on('click', function (e) {
         e.preventDefault()
